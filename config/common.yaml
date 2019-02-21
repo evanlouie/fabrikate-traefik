@@ -1,0 +1,7 @@
+config:
+  namespace: traefik
+  dashboard:
+    enabled: true
+  rbac:
+    enabled: true
+subcomponents:
