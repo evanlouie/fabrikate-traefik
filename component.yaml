@@ -1,8 +1,8 @@
 name: traefik
-generator: helm
+type: helm
 repo: https://github.com/helm/charts
 path: stable/traefik
 subcomponents:
   - name: traefik-namespace
-    generator: static
+    type: static
     path: ./manifests
