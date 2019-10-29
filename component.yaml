@@ -1,8 +1,10 @@
 name: traefik
-type: helm
-repo: https://github.com/helm/charts
-path: stable/traefik
 subcomponents:
   - name: traefik-namespace
     type: static
     path: ./manifests
+  - name: traefik-helm-chart
+    type: helm
+    method: git
+    source: https://github.com/helm/charts
+    path: stable/traefik
